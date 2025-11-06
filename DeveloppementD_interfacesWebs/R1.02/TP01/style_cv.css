@@ -1,0 +1,40 @@
+/* Feuille de style du CV de Aldo Alex NGANJI */
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 70%; 
+    margin-left: 15%
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    font-weight: normal;
+    color: #003366; /* bleu foncé */
+}
+
+h2 {
+    text-align: right;
+    font-size: 170%;
+    font-weight: bold;
+    font-style: italic;
+    color: #009900;
+}
+
+ul {
+    list-style-type: square;
+}
+
+a, a:visited {
+    color: #4d88ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
