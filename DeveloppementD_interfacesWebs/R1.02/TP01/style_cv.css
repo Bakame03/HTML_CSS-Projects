@@ -7,7 +7,10 @@
 
 body {
     width: 70%; 
-    margin-left: 15%
+    margin-left: 15%;
+    background-image: url('gradient.png');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -37,4 +40,21 @@ a, a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+td.semestre {
+    font-family: Arial, sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #009900; 
+    text-align: center;
+}
+
+td.cours, td.sae {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: #000000; 
+    background-color: #ffeb3b; 
 }
