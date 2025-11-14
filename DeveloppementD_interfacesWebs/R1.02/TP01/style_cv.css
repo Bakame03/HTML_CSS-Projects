@@ -17,7 +17,7 @@ h1 {
     text-align: center;
     font-size: 300%;
     font-weight: normal;
-    color: #003366; /* bleu foncé */
+    color: #003366; 
 }
 
 h2 {
@@ -57,4 +57,20 @@ td.cours, td.sae {
     font-weight: bold;
     color: #000000; 
     background-color: #ffeb3b; 
+}
+
+div.motivation {
+    width: 300px;
+    border: 10px solid red;
+    padding: 30px;
+    background-color: #d3d3d3; 
+    text-align: justify;
+    text-indent: 30px;
+    margin: 0 auto;
+}
+
+div.motivation p::first-letter {
+    font-weight: bold;
+    font-size: 200%;
+    color: red;
 }
