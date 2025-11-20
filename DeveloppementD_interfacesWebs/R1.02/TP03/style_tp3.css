@@ -1,0 +1,187 @@
+/* 5. Sélecteur universel */
+* {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+/* 6. Body background */
+body {
+    background-image: url("background.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+/* 7. #page */
+#page {
+    width: 900px;
+    margin: 0 auto;
+    /* Centré horizontalement */
+}
+
+/* 8. #banniere */
+#banniere {
+    height: 211px;
+    background-image: url("banniere.jpg");
+}
+
+/* 9. #banniere h1 */
+#banniere h1 {
+    font-size: 300%;
+    margin: 0;
+    color: white;
+    text-align: center;
+    line-height: 211px;
+}
+
+/* 11. #menu */
+#menu {
+    list-style-type: none;
+    /* Enlever les puces */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Pour faire un menu horizontal */
+    justify-content: space-around;
+    /* Optionnel: pour espacer les éléments */
+}
+
+#menu li {
+    flex: 1;
+    /* Optionnel: pour que les boutons aient la même taille */
+    text-align: center;
+}
+
+#menu a {
+    display: block;
+    text-decoration: none;
+    /* Enlever le soulignement */
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+    /* Optionnel: pour donner du volume aux boutons */
+}
+
+#menu a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* Dropdown Menu Styles */
+#menu li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    /* Context for absolute positioning of submenu */
+}
+
+#menu ul {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    z-index: 1000;
+    /* Ensure it's on top */
+}
+
+#menu li:hover>ul {
+    display: block;
+    /* Show on hover */
+}
+
+#menu ul li {
+    width: 100%;
+    /* Full width of parent */
+}
+
+#menu ul a {
+    background-color: #ffffcc;
+    /* Slightly different color for submenu items */
+}
+
+#menu ul a:hover {
+    background-color: #333;
+    /* Darker hover for submenu */
+}
+
+/* 12. #conteneur */
+#conteneur {
+    display: flex;
+}
+
+/* 13. section */
+section {
+    width: 75%;
+}
+
+/* 14. #auteur */
+#auteur {
+    width: 23%;
+    margin-left: 1em;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    /* Ajouté pour que le texte ne colle pas aux bords */
+    box-sizing: border-box;
+    /* Recommandé pour gérer le padding sans casser la largeur */
+}
+
+/* 15. article */
+article {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: white;
+}
+
+/* 16. article h2 */
+article h2 {
+    font-size: 160%;
+}
+
+/* 17. article header */
+article header {
+    padding: 1em;
+    background-color: yellow;
+    color: black;
+}
+
+/* 18. article footer */
+article footer {
+    padding: 1em;
+    background-color: gray;
+    color: black;
+}
+
+/* 19. article img */
+article img {
+    float: left;
+    margin: 1em;
+    height: 200px;
+}
+
+/* 20. article aside */
+article aside {
+    margin: 1em 3em;
+    /* Haut/Bas 1em, Gauche/Droite 3em */
+    padding: 1em;
+    background-color: white;
+    border: 2px solid yellow;
+    font-style: italic;
+    font-size: 0.8em;
+    clear: both;
+}
+
+/* 21. #infos */
+#infos {
+    color: white;
+    font-size: 0.8em;
+    background-color: black;
+    text-align: center;
+    /* Optionnel: pour centrer le texte du footer */
+    padding: 1em;
+    /* Optionnel: pour aérer */
+    margin-top: 1em;
+    /* Optionnel: pour séparer du contenu */
+}
