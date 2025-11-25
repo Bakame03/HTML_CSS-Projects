@@ -10,7 +10,7 @@ body {
 
 #page {
     width: 900px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 #banniere {
@@ -98,48 +98,38 @@ section {
     background-color: black;
     color: white;
     padding: 1em;
-    /* Ajouté pour que le texte ne 
-    box-sizing: border-box;
-    /* Recommandé pour gérer le padding sans casser la largeur */
 }
 
-/* 15. article */
 article {
     margin-top: 1em;
     padding: 1em;
     background-color: white;
 }
 
-/* 16. article h2 */
 article h2 {
     font-size: 160%;
 }
 
-/* 17. article header */
 article header {
     padding: 1em;
     background-color: yellow;
     color: black;
 }
 
-/* 18. article footer */
 article footer {
     padding: 1em;
     background-color: gray;
     color: black;
 }
 
-/* 19. article img */
 article img {
     float: left;
     margin: 1em;
     height: 200px;
 }
 
-/* 20. article aside */
 article aside {
     margin: 1em 3em;
-    /* Haut/Bas 1em, Gauche/Droite 3em */
     padding: 1em;
     background-color: white;
     border: 2px solid yellow;
@@ -148,15 +138,11 @@ article aside {
     clear: both;
 }
 
-/* 21. #infos */
 #infos {
     color: white;
     font-size: 0.8em;
     background-color: black;
     text-align: center;
-    /* Optionnel: pour centrer le texte du footer */
     padding: 1em;
-    /* Optionnel: pour aérer */
     margin-top: 1em;
-    /* Optionnel: pour séparer du contenu */
 }
