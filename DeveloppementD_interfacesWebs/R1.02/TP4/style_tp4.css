@@ -1,0 +1,148 @@
+* {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+#page {
+    width: 900px;
+    margin: auto;
+}
+
+#banniere {
+    height: 211px;
+    background-image: url("banniere.jpg");
+}
+
+#banniere h1 {
+    font-size: 300%;
+    margin: 0;
+    color: white;
+    text-align: center;
+    line-height: 211px;
+}
+
+#menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu li {
+    flex: 1;
+    text-align: center;
+}
+
+#menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: yellow;
+    padding: 10px;
+}
+
+#menu a:hover {
+    color: white;
+    background-color: black;
+}
+
+#menu li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+#menu ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    list-style-type: none;
+    z-index: 1000;
+}
+
+#menu li:hover>ul {
+    display: block;
+}
+
+#menu ul li {
+    width: 100%;
+}
+
+#menu ul a {
+    background-color: #ffffcc;
+}
+
+#menu ul a:hover {
+    background-color: #333;
+}
+#conteneur {
+    display: flex;
+}
+
+section {
+    width: 75%;
+}
+
+#auteur {
+    width: 23%;
+    margin-left: 1em;
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+
+article {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: white;
+}
+
+article h2 {
+    font-size: 160%;
+}
+
+article header {
+    padding: 1em;
+    background-color: yellow;
+    color: black;
+}
+
+article footer {
+    padding: 1em;
+    background-color: gray;
+    color: black;
+}
+
+article img {
+    float: left;
+    margin: 1em;
+    height: 200px;
+}
+
+article aside {
+    margin: 1em 3em;
+    padding: 1em;
+    background-color: white;
+    border: 2px solid yellow;
+    font-style: italic;
+    font-size: 0.8em;
+    clear: both;
+}
+
+#infos {
+    color: white;
+    font-size: 0.8em;
+    background-color: black;
+    text-align: center;
+    padding: 1em;
+    margin-top: 1em;
+}
